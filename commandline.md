@@ -12,6 +12,12 @@ This will create the gzipped tarball `voyages_different_direction.tar.gz` with e
 tar -zcvf voyages_different_direction.tar.gz voyages_different_direction_*
 ```
 
+### Decompress a gzipped tarball
+
+```
+tar xzvf voyages_different_direction.tar.gz
+```
+
 ## File management
 
 ### Soft links
