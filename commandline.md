@@ -6,6 +6,8 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
 ### Create a gzipped tarball from a `*` glob command
 
+This will create the gzipped tarball `voyages_different_direction.tar.gz` with everything in my current folder that starts with `voyages_different_direction_`.
+
 ```
 tar -zcvf voyages_different_direction.tar.gz voyages_different_direction_*
 ```
