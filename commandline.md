@@ -8,11 +8,23 @@ This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
 This will create the gzipped tarball `voyages_different_direction.tar.gz` with everything in my current folder that starts with `voyages_different_direction_`.
 
+* `z` is for "g***z***ip"
+* `c` is for "***c***ompress"
+* `v` is for "***v***erbose"
+* `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
+
 ```
 tar -zcvf voyages_different_direction.tar.gz voyages_different_direction_*
 ```
 
 ### Decompress a gzipped tarball
+
+The `-` is optional, can also say `tar -xzvf`
+
+* `x` is for "e***x***tract"
+* `z` is for "g***z***ip"
+* `v` is for "***v***erbose"
+* `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
 
 ```
 tar xzvf voyages_different_direction.tar.gz
