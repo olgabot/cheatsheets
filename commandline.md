@@ -27,3 +27,11 @@ Make a pretend file in a new place that jumps to the old file when you look at i
 ```
 ln -s oldfile newplace
 ```
+
+### Opening files containing and not containing certain text
+
+Open all files that match this glob command, except if they have `stream` in them.
+
+```
+ls -1 exon_3p_exonbody_tier1_*/homerResults.html | grep -v stream | xargs open
+```
