@@ -14,3 +14,9 @@ findMotifsGenome = '/home/yeo-lab/software/homer/bin/findMotifsGenome.pl'
 command = '{} {} hg19 {} -bg {} {}'.format(
         findMotifsGenome, bedfile, out_dir, background, homer_flags)
 ```
+ 
+The final command looks like this:
+
+```
+findMotifsGenome.pl peaks.bed out_dir hg19 -bg background.bed -rna -len 4,5,6,7 -mset vertebrates -mis 1 -p 4
+```
