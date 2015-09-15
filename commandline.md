@@ -10,7 +10,7 @@ This will create the gzipped tarball `voyages_different_direction.tar.gz` with e
 
 * `z` is for "g***z***ip"
 * `c` is for "***c***ompress"
-* `v` is for "***v***erbose"
+* `v` is for "***v***erbose." Show all the files that are getting compressed as it's happening. (Good for debugging)
 * `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
 
 ```
@@ -23,7 +23,7 @@ The `-` is optional, can also say `tar -xzvf`
 
 * `x` is for "e***x***tract"
 * `z` is for "g***z***ip"
-* `v` is for "***v***erbose"
+* `v` is for "***v***erbose." Show all the files that are getting extracted as it's happening. (Good for debugging)
 * `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
 
 ```
