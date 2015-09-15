@@ -2,6 +2,14 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
+## Text maninpulation
+
+### Skip the first line of a file
+
+```
+tail -n +2 filename.txt
+```
+
 ## Compressing and decompressing files
 
 ### Create a gzipped tarball from a `*` glob command
