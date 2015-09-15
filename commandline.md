@@ -40,6 +40,14 @@ Make a pretend file in a new place that jumps to the old file when you look at i
 ln -s oldfile newplace
 ```
 
+### Hard links
+
+Make a new pointer (aka `inode`) to the same data in the filesystem. If there are multiple pointers to the data, the data is not truly "erased" until the last pointer is removed (i.e. the `inode` number is decremented to 0)
+
+```
+ln oldfile newplace
+```
+
 ### Opening files containing and not containing certain text
 
 Open all files that match this glob command, except if they have `stream` in them.
