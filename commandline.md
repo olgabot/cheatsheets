@@ -26,6 +26,15 @@ tar -zcvf voyages_different_direction.tar.gz voyages_different_direction_*
 tar xzvf voyages_different_direction.tar.gz
 ```
 
+### Create a zip file
+
+Create a zip file from multiple files
+
+```
+zip squash.zip file1 file2 file3
+```
+
+
 ## File management
 
 ### Soft links
