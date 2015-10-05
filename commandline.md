@@ -16,11 +16,23 @@ tail -n +2 filename.txt
 
 This will create the gzipped tarball `voyages_different_direction.tar.gz` with everything in my current folder that starts with `voyages_different_direction_`.
 
+* `z` is for "g***z***ip"
+* `c` is for "***c***ompress"
+* `v` is for "***v***erbose." Show all the files that are getting compressed as it's happening. (Good for debugging)
+* `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
+
 ```
 tar -zcvf voyages_different_direction.tar.gz voyages_different_direction_*
 ```
 
 ### Decompress a gzipped tarball
+
+The `-` is optional, can also say `tar -xzvf`
+
+* `x` is for "e***x***tract"
+* `z` is for "g***z***ip"
+* `v` is for "***v***erbose." Show all the files that are getting extracted as it's happening. (Good for debugging)
+* `f` is for "***f***ilename." Must be the last flag because the filename is inferred after it
 
 ```
 tar xzvf voyages_different_direction.tar.gz
@@ -43,6 +55,14 @@ Make a pretend file in a new place that jumps to the old file when you look at i
 
 ```
 ln -s oldfile newplace
+```
+
+### Hard links
+
+Make a new pointer (aka `inode`) to the same data in the filesystem. If there are multiple pointers to the data, the data is not truly "erased" until the last pointer is removed (i.e. the `inode` number is decremented to 0)
+
+```
+ln oldfile newplace
 ```
 
 ### Opening files containing and not containing certain text
