@@ -72,3 +72,23 @@ Open all files that match this glob command, except if they have `stream` in the
 ```
 ls -1 exon_3p_exonbody_tier1_*/homerResults.html | grep -v stream | xargs open
 ```
+
+## Installing programs 
+
+### Python
+
+To install a python program, usually you can use `pip`. I like the `-e` flag, which installs it in "developer mode" because any change in the files located there is also reflected in the imported code.
+
+```
+cd python_program/
+pip install -e .
+```
+
+### From source
+
+To install a program from source on a shared cluster, you will often need to specify the directory you want to install things. That can be done with `--prefix` at the `./configure` step. The directory is where you want all the `bin/`, `lib/` and so on files to be added to (default is `/usr/local`) Then, do `make` and `make install`. For example:
+
+```
+./configure --prefix=/projects/ps-yeolab/software
+make && make install   # "make install" will run only if "make" is successful
+```
