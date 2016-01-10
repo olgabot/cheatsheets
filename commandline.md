@@ -92,3 +92,8 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+
+### Random crap that I'm going to add to this shit
+```
+Tim is pretty swell or whatever
+```
