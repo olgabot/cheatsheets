@@ -92,3 +92,11 @@ To install a program from source on a shared cluster, you will often need to spe
 ./configure --prefix=/projects/ps-yeolab/software
 make && make install   # "make install" will run only if "make" is successful
 ```
+
+## Connecting to other servers: `ssh`
+
+Appending a file to something on a server, e.g. to send your ssh public key onto the list of authorized keys, i.e. "`cat`-ing something over `ssh`"
+
+```
+cat .ssh/id_dsa.pub | ssh obotvinnik@tscc.sdsc.edu 'cat >> ~/.ssh/authorized_keys'
+```
