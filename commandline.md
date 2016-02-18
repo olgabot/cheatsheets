@@ -2,6 +2,15 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
+## If you're prompted for a password with the ucsd-train account
+
+Then the ssh key needs to be added again.
+
+```
+ssh-add ~/.ssh/biom_262.pri
+```
+
+
 ## Text maninpulation
 
 ### Skip the first line of a file
