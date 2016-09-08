@@ -20,3 +20,9 @@ sshfs obotvinn@tscc.sdsc.edu:[folder that you want from the server] [where you w
 - Can't use it as `root`
 - If you mount a volume, then switch users, the other user can still access the volume (unsafe)
 
+
+Here's the command I've been using:
+
+```
+sshfs obotvinnik@tscc.sdsc.edu:/home/obotvinnik $HOME/Desktop/tscc
+```
