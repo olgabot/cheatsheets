@@ -26,3 +26,11 @@ Here's the command I've been using:
 ```
 sshfs obotvinnik@tscc.sdsc.edu:/home/obotvinnik $HOME/Desktop/tscc
 ```
+
+## Unmounting: 
+
+```
+umount ~/Desktop/tscc
+```
+
+or drag it to the trash
