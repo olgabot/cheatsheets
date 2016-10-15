@@ -1,4 +1,4 @@
-# Git
+# Git is stupid !!!
 
 ## When you `git pull` and get merge conflicts
 
@@ -18,3 +18,12 @@ Force getting all the remote data
 git fetch --all
 git reset --hard origin/master
 ```
+
+***
+# Chapter  
+## Section
+### subsection
+#### subsubsection
+
+##### subsubsubsection
+###### subsubsubsubsection
