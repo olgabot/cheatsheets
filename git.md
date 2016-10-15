@@ -1,4 +1,4 @@
-# Git
+# Git Is Awesome
 
 ## When you `git pull` and get merge conflicts
 
