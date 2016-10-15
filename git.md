@@ -18,3 +18,4 @@ Force getting all the remote data
 git fetch --all
 git reset --hard origin/master
 ```
+'Hello World!'
