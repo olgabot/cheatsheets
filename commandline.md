@@ -11,7 +11,7 @@ ssh-add ~/.ssh/biom_262.pri
 ```
 
 
-## Text maninpulation
+## Text manipulation
 
 ### Skip the first line of a file
 
@@ -82,7 +82,7 @@ Open all files that match this glob command, except if they have `stream` in the
 ls -1 exon_3p_exonbody_tier1_*/homerResults.html | grep -v stream | xargs open
 ```
 
-## Installing programs 
+## Installing programs
 
 ### Python
 
@@ -108,4 +108,17 @@ Appending a file to something on a server, e.g. to send your ssh public key onto
 
 ```
 cat .ssh/id_dsa.pub | ssh obotvinnik@tscc.sdsc.edu 'cat >> ~/.ssh/authorized_keys'
+```
+
+## Additional notes
+
+cd = change directory
+ls = list Show
+cd .. = go up a directory
+cd . = present directory
+
+ctrl+c = exit currently running command
+
+```
+everything that is a program surrounded by 3 backticks on each side
 ```

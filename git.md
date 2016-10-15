@@ -18,3 +18,12 @@ Force getting all the remote data
 git fetch --all
 git reset --hard origin/master
 ```
+## Additional Notes
+
+git clone
+git add
+git commit -m "message about committment "
+
+atom .
+
+launch atom for current directory
