@@ -1,4 +1,6 @@
+
 # Git is stupid !!!
+# Codeneuro Git is neuroscience! and everything is awesome!
 
 ## When you `git pull` and get merge conflicts
 
