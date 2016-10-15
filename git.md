@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Git Is Awesome
-=======
 # Codeneuro Git is neuroscience! and everything is awesome!
->>>>>>> 92a0b595e79a29b51746e527362cc70de09d1b80
 
 ## When you `git pull` and get merge conflicts
 
