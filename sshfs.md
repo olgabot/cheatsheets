@@ -14,6 +14,14 @@ Broken down, the command is:
 sshfs obotvinn@tscc.sdsc.edu:[folder that you want from the server] [where you want to see it on your laptop]
 ```
 
+## Follow symbolic links 
+
+Normally, `sshfs` doesn't follow symbolic links To follow any symlinks (soft links) that you make 
+
+```
+sshfs -o follow_symlinks obotvinnik@tscc.sdsc.edu:/oasis/tscc/scratch/obotvinnik tscc
+```
+
 ## Glitches to be aware of
 
 - Volumes may get unmounted
