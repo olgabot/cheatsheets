@@ -16,7 +16,7 @@ sshfs obotvinn@tscc.sdsc.edu:[folder that you want from the server] [where you w
 
 ## Follow symbolic links 
 
-Normally, `sshfs` doesn't follow symbolic links To follow any symlinks (soft links) that you make 
+Normally, `sshfs` doesn't follow symbolic links To follow any symlinks (soft links) that you make. Here's the command to make it do that:
 
 ```
 sshfs -o follow_symlinks obotvinnik@tscc.sdsc.edu:/oasis/tscc/scratch/obotvinnik tscc
