@@ -5,13 +5,13 @@
 Example command:
 
 ```
-sshfs obotvinn@tscc.sdsc.edu:/home/obotvinnik/projects/tasic2016/analysis/tasic_v1/majiq_v1 /home/Users/olga/majiq_v1
+sshfs obotvinnik@tscc.sdsc.edu:/home/obotvinnik/projects/tasic2016/analysis/tasic_v1/majiq_v1 /home/Users/olga/majiq_v1
 ```
 
 Broken down, the command is:
 
 ```
-sshfs obotvinn@tscc.sdsc.edu:[folder that you want from the server] [where you want to see it on your laptop]
+sshfs obotvinnik@tscc.sdsc.edu:[folder that you want from the server] [where you want to see it on your laptop]
 ```
 
 ## Follow symbolic links 
