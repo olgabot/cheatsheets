@@ -18,3 +18,17 @@ Force getting all the remote data
 git fetch --all
 git reset --hard origin/master
 ```
+# GIT TRAINING
+## Commands
+- `~` = `$HOME`
+- mkdir = create folder = make directory
+- `git clone` (paste url here from git) = clone url = creating copy
+- -`cd` = change direction
+- `ls` = listing files (show files that exist)
+- `which` "what you're trying to find" = find location
+- `cat` = glue files together
+
+## [Books to Read](http://pythonforbiologists.com/)
+
+
+  )
