@@ -1,4 +1,6 @@
+# Git is stupid !!!
 # Codeneuro Git is neuroscience! and everything is awesome!
+# Git is stupid !!! Let's create some conflict and try to resolve it.
 
 ## When you `git pull` and get merge conflicts
 
@@ -18,3 +20,12 @@ Force getting all the remote data
 git fetch --all
 git reset --hard origin/master
 ```
+
+***
+# Chapter  
+## Section
+### subsection
+#### subsubsection
+
+##### subsubsubsection
+###### subsubsubsubsection
