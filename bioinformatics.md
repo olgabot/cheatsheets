@@ -2,6 +2,9 @@
 
 This is a cheat sheet for bioinformatics command line programs.
 
+Bioinformatics, Yay!!
+
+
 ## HOMER motif finding
 
 Use [HOMER](http://homer.salk.edu/homer/ngs/peakMotifs.html) for finding motifs in the genome given bed files.
