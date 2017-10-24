@@ -109,3 +109,11 @@ Appending a file to something on a server, e.g. to send your ssh public key onto
 ```
 cat .ssh/id_dsa.pub | ssh obotvinnik@tscc.sdsc.edu 'cat >> ~/.ssh/authorized_keys'
 ```
+
+## `xargs`
+
+`xargs` is really powerful but I don't understand it and cringe when I have to use it. Here's an example where `xargs` worked:
+
+```
+ls -Str ~/googledrive/MACA/384W_QC/plate_reader/raw_plate_reader_output/3_Month/cherrypicked/*.csv | xargs dobby aggregate  --desired-concentration 0.3  --output-folder ~/googledrive/MACA/cDNA\ Pick\ Lists/3_month/
+```
