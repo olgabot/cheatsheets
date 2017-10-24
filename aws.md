@@ -61,11 +61,43 @@ Here's an example packer file called `anaconda-5.0.0.json` that installs version
 paceker build anaconda-5.0.0.json
 ```
 
-## Using `aegea` to launch and manage Amazon machine instances (AMIs) from the command line
-### Launch an instance from the command line using `aegea`
+The end of the build should look like this:
 
 ```
-aegea launch --instance-type i3.4xlarge --duration-hours 4  --ami ami-cd0f5cb6 olgabot-czirna1
+==> ubuntu16-ami: Stopping the source instance...
+    ubuntu16-ami: Stopping instance, attempt 1
+==> ubuntu16-ami: Waiting for the instance to stop...
+==> ubuntu16-ami: Creating the AMI: -ubuntu-2017-10-24T15-32-56Z
+    ubuntu16-ami: AMI: ami-6769a51f
+==> ubuntu16-ami: Waiting for AMI to become ready...
+==> ubuntu16-ami: Modifying attributes on AMI (ami-6769a51f)...
+    ubuntu16-ami: Modifying: description
+==> ubuntu16-ami: Modifying attributes on snapshot (snap-020f596c5669b82e8)...
+==> ubuntu16-ami: Terminating the source AWS instance...
+==> ubuntu16-ami: Cleaning up any extra volumes...
+==> ubuntu16-ami: Deleting temporary security group...
+==> ubuntu16-ami: Deleting temporary keypair...
+Build 'ubuntu16-ami' finished.
+
+==> Builds finished. The artifacts of successful builds are:
+--> ubuntu16-ami: AMIs were created:
+us-west-2: ami-6769a51f
+```
+
+## Using `aegea` to launch and manage Amazon machine instances (AMIs) from the command line
+
+### Which machine should I use?
+
+A really useful website for filtering and searching machine types is http://ec2instances.info/ for "Easy Amazon EC2 Instance Comparison."
+
+### Launch an instance from the command line using `aegea`.
+
+This is how to launch a large instance to only run for a few hours on AWS. This
+is using the AMI image id `ami-6769a51f`, which is the Ubuntu + Anaconda 5.0.0
+image I created with Packer above.
+
+```
+aegea launch --instance-type i3.4xlarge --duration-hours 2  --ami ami-6769a51f olgabot-anaconda-loom
 ```
 
 ### Log in to that instance
