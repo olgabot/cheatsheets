@@ -100,9 +100,17 @@ image I created with Packer above.
 aegea launch --instance-type i3.4xlarge --duration-hours 2  --ami ami-6769a51f olgabot-anaconda-loom
 ```
 
+#### Launch an instance that can copy files on S3
+
+To be able to copy files from S3 buckets that only I can read, add `--iam-role olgabot-s3readonly` (created in the AWS console) to the `agea launch` command
+
+```
+aegea launch --ami ami-56ff512c --instance-type i3.4xlarge --duration-hours 2 --iam-role olgabot-s3readonly olgabot-velocyto-extract-intervals
+```
+
 ### Log in to that instance
 ```
-aegea ssh ubuntu@olgabot-czirna1
+aegea ssh ubuntu@olgabot-anaconda-loom
 ```
 
 ### Find your instances
