@@ -16,9 +16,9 @@ To install a kernel from another environment to your primary jupyter notebook, d
 
 ```
 source activate myenv
-python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python 2.7 (myenv)"
 source activate other-env
-python -m ipykernel install --user --name other-env --display-name "Python (other-env)"
+python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python 3.6 (other-env)"
 ```
 
 
