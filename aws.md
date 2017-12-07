@@ -121,3 +121,9 @@ my username `olgabot`:
 ```
 aegea ls -t 'Name=olgabot*'
 ```
+
+#### CHeck on the status of a batch job using `aegea batch watch`
+
+```
+aegea batch watch ca3cba55-82cb-4a4c-b5ab-19131322e77c
+```
