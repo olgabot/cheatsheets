@@ -1,6 +1,17 @@
 # SSHFS
 
-`sshfs` is a way that you can view files on a server in your own finder as if they are on your computer.
+`sshfs` is a way that you can view files on a server in your own finder as if they are on your computer. This is very helpful and convenient for viewing many images/plots from the output of a program, or viewing large files on the server, e.g. `bams` or `Robj`.
+
+## Installation
+
+On macOS, you'll need to install "OSXFuse" for low level filesystem stuff before you install SSHFS. I installed via [Homebrew](https://brew.sh/) (`brew` command):
+
+```
+brew cask install osxfuse
+brew install sshfs
+```
+
+## Commands
 
 Example command:
 
