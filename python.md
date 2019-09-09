@@ -126,3 +126,12 @@ And the json output. Note: it is *not* valid JSON but it's enough for humans to 
     'seed': 42}],
   'version': 0.4}]
 ```
+
+## Ignore Matplotlib's "too many figures open" warning
+
+```python
+import matplotlib.pyplot as plt
+
+# Ignore "too many figures open" warning
+plt.rcParams.update({'figure.max_open_warning': 0})
+```
