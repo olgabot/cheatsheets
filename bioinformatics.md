@@ -27,3 +27,12 @@ The final command looks like this:
 ```
 findMotifsGenome.pl peaks.bed out_dir hg19 -bg background.bed -rna -len 4,5,6,7 -mset vertebrates -mis 1 -p 4
 ```
+
+## Subsample a fastq file
+
+Use [seqtk](https://github.com/lh3/seqtk) (installable via [bioconda](https://bioconda.github.io/recipes/seqtk/README.html)) to subsample a fastq.gz file down to 1000 reads, using a random seed of `0`.
+
+```
+mkdir subsampled
+for F in $(ls *.gz) ;do echo $F ; seqtk sample -s 0 $F 1000 | gzip -c - > subsampled/$F ; done
+```
