@@ -76,3 +76,21 @@ Fast-forward
  rename outrigger/tests/data/tasic2016/outrigger_output_bam/index/{junction_exon_direction_triples.csv => exon_direction_junction.csv} (100%)
  create mode 100644 outrigger/tests/data/tasic2016/outrigger_output_bam/psi/outrigger_summary.csv
  ```
+
+
+## Undo `git clone --single-branch`
+
+e.g. if you cloned a single branch from a repo with `--single-branch`:
+
+```
+git clone --single-branch --branch dev https://github.com/czbiohub/nf-predictorthologs ripgrep
+```
+
+But then you need to merge in the changes from dev, here is how to do it (cribbed from https://stackoverflow.com/a/60846265/1628971):
+
+
+```
+git remote set-branches --add origin dev
+git fetch origin dev
+git merge dev
+```
