@@ -21,12 +21,14 @@ AGILNVQPSPKEECALEIIKGAALRQEEVYYDSSILTSLLLGNPGRKILEFLSLRHYNMERFTNN
 >XP_021111609.1 transferrin receptor protein 1 isoform X1 [Heterocephalus glaber]
 ```
 
-Using `bioawk`
+Use `bioawk` to filter a gzipped fasta file for only fasta records whose name contains `NP_` ("good" records in NCBI that were manually curated):
 
 
 ```
  ✘  Thu 16 Apr - 18:28  ~/data_lg/czbiohub-reference/ncbi/refseq/releases/refseq-release98-2020-02-06/vertebrate_mammalian 
- olga@lrrr  gunzip -c  vertebrate_mammalian_concatenated.faa.gz | head |bioawk -c fastx ' { if ( $name ~ /NP_/ ) { print ">"$name" "$comment"\n"$seq } }'
+ olga@lrrr  gunzip -c  vertebrate_mammalian_concatenated.faa.gz \
+ | head \
+ | bioawk -c fastx ' { if ( $name ~ /NP_/ ) { print ">"$name" "$comment"\n"$seq } }'
 >NP_999413.2 corticosteroid 11-beta-dehydrogenase isozyme 1 isoform 1 [Sus scrofa]
 MAFMKKYLLPILGIFLAYYYYSANEEFRPEMLRGKKVIVTGASKGIGREMAYHLARMGAHVVVTARSEETLKKVVSHCLELGASSAHYVAGTMEDMTFAEQFVAKAGKLLGGLDMLILNHITHASMTPFSDDIHLVRRSMEVNFLSYVVLSVAALPMLKQSNGSIVVVSSQAGKMANPLVAPYSASKFALDGFFSSIRKEYSVTKVNVSITLCILGLIDTDTAMTAVAGILNVQPSPKEECALEIIKGAALRQEEVYYDSSILTSLLLGNPGRKILEFLSLRHYNMERFTNN
 >NP_001335890.1 corticosteroid 11-beta-dehydrogenase isozyme 1 isoform 2 [Sus scrofa]
