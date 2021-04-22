@@ -117,3 +117,31 @@ cat .ssh/id_dsa.pub | ssh obotvinnik@tscc.sdsc.edu 'cat >> ~/.ssh/authorized_key
 ```
 ls -Str ~/googledrive/MACA/384W_QC/plate_reader/raw_plate_reader_output/3_Month/cherrypicked/*.csv | xargs dobby aggregate  --desired-concentration 0.3  --output-folder ~/googledrive/MACA/cDNA\ Pick\ Lists/3_month/
 ```
+
+## Replace `^M` characters with newline for `less`
+
+From https://stackoverflow.com/questions/19406418/remove-m-characters-from-file-using-sed
+
+```
+(immune-evolution)
+ Thu 22 Apr - 07:56  /mnt/data_sm/olga/nextflow-kmermaid-botryllus-mhc-april2021/c9/f337129a87448c9685b18bb21e9416 
+ olga@lrrr  tr '^M' '\n' <.command.err | less -S
+```
+
+Example output:
+
+```
+(immune-evolution)
+ Thu 22 Apr - 07:57  /mnt/data_sm/olga/nextflow-kmermaid-botryllus-mhc-april2021/c9/f337129a87448c9685b18bb21e9416 
+ olga@lrrr  tr '^M' '\n' <.command.err | tail
+
+...loading from '.' / 280890 sigs total
+
+...loading from '.' / 280900 sigs total
+
+...loading from '.' / 280910 sigs total
+
+...loading from '.' / 280920 sigs total
+
+...loading from '.' / 280930 sigs total%
+```
