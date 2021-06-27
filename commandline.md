@@ -145,3 +145,20 @@ Example output:
 
 ...loading from '.' / 280930 sigs total%
 ```
+
+## GNU Parallel
+
+A file of commands can be run with GNU parallel with:
+
+```
+parallel --progress --eta --jobs 96 < /home/olga/data_sm/immune-evolution/kmer-signatures/2--test-human/6--gather-adar/gather_adar_commands.txt
+```
+
+## Run `make` in parallel
+
+E.g. if there are multiple targets, you can run make in parallel on all of them with `--jobs`
+
+```bash
+make --jobs 32
+```
+
